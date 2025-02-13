@@ -1,0 +1,53 @@
+Use Case 1: Record a Workout
+
+Actor: Bodybuilder (or any user type).
+Goal: Log the details of a workout session.
+Preconditions: User must be logged in.
+Steps:
+User selects "Log Workout" from the dashboard.
+System displays workout categories (e.g., Strength, Cardio, Flexibility).
+User selects "Strength Training."
+User enters workout details (e.g., Exercise Name, Sets, Reps, Weight).
+User saves the workout.
+System confirms and updates the progress graph.
+Postconditions: Workout details are saved and visible in the user’s history.
+
+Use Case 2: Assign a Training Plan
+
+Actor: Fitness Instructor.
+Goal: Assign a customized workout plan to a student.
+Preconditions: Instructor and student profiles must exist.
+Steps:
+Instructor selects a student from their client list.
+System displays the student’s profile and progress.
+Instructor selects "Assign Training Plan."
+System displays available exercises and routines.
+Instructor selects or customizes a routine and assigns it to the student.
+System notifies the student about the new plan.
+Postconditions: Training plan is saved to the student’s profile.
+
+Use Case 3: Track Weight Progress
+
+Actor: Weight Loss User.
+Goal: Log and track weight changes over time.
+Preconditions: User must be logged in.
+Steps:
+User navigates to the "Weight Tracker" feature.
+System displays a prompt for today’s weight.
+User enters the weight value and submits.
+System updates the weight graph.
+System provides feedback (e.g., "Great job! You’ve lost 2 lbs this week!").
+Postconditions: Weight log is saved, and progress is visualized on a graph.
+
+Use Case 4: Sync with Instructor
+
+Actor: Fitness Student.
+Goal: Sync with the assigned fitness instructor for updated plans.
+Preconditions: Instructor and student accounts must be linked.
+Steps:
+Student logs in and navigates to their dashboard.
+System checks for any updates from the instructor.
+If updates exist, the system notifies the student (e.g., "New Plan Assigned!").
+Student views the new plan.
+Student starts using the updated routine.
+Postconditions: Student’s dashboard is updated with the latest plans.
