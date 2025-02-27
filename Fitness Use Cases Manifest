@@ -1,53 +1,129 @@
 Use Case 1: Record a Workout
+• Actor: Bodybuilder (or any user type)
+• Goal: Log the details of a workout session
+• Preconditions:
+User must be logged in
 
-Actor: Bodybuilder (or any user type).
-Goal: Log the details of a workout session.
-Preconditions: User must be logged in.
-Steps:
-User selects "Log Workout" from the dashboard.
-System displays workout categories (e.g., Strength, Cardio, Flexibility).
-User selects "Strength Training."
-User enters workout details (e.g., Exercise Name, Sets, Reps, Weight).
-User saves the workout.
-System confirms and updates the progress graph.
-Postconditions: Workout details are saved and visible in the user’s history.
+• Steps:
+User selects "Log Workout" from the dashboard
+System displays workout categories (e.g., Strength, Cardio, Flexibility)
+User selects "Strength Training"
+User enters workout details (e.g., Exercise Name, Sets, Reps, Weight)
+User saves the workout
+System confirms and updates the progress graph
+
+• Postconditions:
+Workout details are saved and visible in the user’s history
+
 
 Use Case 2: Assign a Training Plan
+• Actor: Fitness Instructor
+• Goal: Assign a customized workout plan to a student
+• Preconditions:
+Instructor and student profiles must exist
 
-Actor: Fitness Instructor.
-Goal: Assign a customized workout plan to a student.
-Preconditions: Instructor and student profiles must exist.
-Steps:
-Instructor selects a student from their client list.
-System displays the student’s profile and progress.
-Instructor selects "Assign Training Plan."
-System displays available exercises and routines.
-Instructor selects or customizes a routine and assigns it to the student.
-System notifies the student about the new plan.
-Postconditions: Training plan is saved to the student’s profile.
+• Steps:
+Instructor selects a student from their client list
+System displays the student’s profile and progress
+Instructor selects "Assign Training Plan"
+System displays available exercises and routines
+Instructor selects or customizes a routine and assigns it to the student
+System notifies the student about the new plan
+
+• Postconditions:
+Training plan is saved to the student’s profile
+
 
 Use Case 3: Track Weight Progress
+• Actor: Weight Loss User
+• Goal: Log and track weight changes over time
+• Preconditions:
+User must be logged in
 
-Actor: Weight Loss User.
-Goal: Log and track weight changes over time.
-Preconditions: User must be logged in.
-Steps:
-User navigates to the "Weight Tracker" feature.
-System displays a prompt for today’s weight.
-User enters the weight value and submits.
-System updates the weight graph.
-System provides feedback (e.g., "Great job! You’ve lost 2 lbs this week!").
-Postconditions: Weight log is saved, and progress is visualized on a graph.
+• Steps:
+User navigates to the "Weight Tracker" feature
+System displays a prompt for today’s weight
+User enters the weight value and submits
+System updates the weight graph
+System provides feedback (e.g., "Great job! You’ve lost 2 lbs this week!")
+
+• Postconditions:
+Weight log is saved, and progress is visualized on a graph
+
 
 Use Case 4: Sync with Instructor
+• Actor: Fitness Student
+• Goal: Sync with the assigned fitness instructor for updated plans
+• Preconditions:
+Instructor and student accounts must be linked
 
-Actor: Fitness Student.
-Goal: Sync with the assigned fitness instructor for updated plans.
-Preconditions: Instructor and student accounts must be linked.
-Steps:
-Student logs in and navigates to their dashboard.
-System checks for any updates from the instructor.
-If updates exist, the system notifies the student (e.g., "New Plan Assigned!").
-Student views the new plan.
-Student starts using the updated routine.
-Postconditions: Student’s dashboard is updated with the latest plans.
+• Steps:
+Student logs in and navigates to their dashboard
+System checks for any updates from the instructor
+If updates exist, the system notifies the student (e.g., "New Plan Assigned!")
+Student views the new plan
+Student starts using the updated routine
+
+• Postconditions:
+Student’s dashboard is updated with the latest plans
+
+
+Use Case 5: Log a Meal
+• Actor: Any user (Bodybuilders, Weight Loss Users, Fitness Students)
+• Goal: Track daily food intake for nutrition monitoring
+• Preconditions:
+User must be logged in
+Meal logging feature must be enabled
+
+• Steps:
+User selects "Log Meal" from the dashboard
+System prompts user to enter meal details (food items, portion sizes, calories, macronutrients)
+User inputs the meal details and selects "Save"
+System validates inputs (ensures calorie count is a number, no empty fields)
+System saves the meal entry and updates the user’s daily meal log
+System provides a summary of total calories/macros consumed for the day
+
+• Postconditions:
+Meal entry is saved to the user's meal log
+Daily intake is updated and viewable in reports
+
+
+Use Case 6: Set and Track Fitness Goals
+• Actor: Any user (Bodybuilders, Weight Loss Users, Fitness Students)
+• Goal: Set a personal fitness goal and track progress
+• Preconditions:
+User must be logged in
+Goal tracking feature must be enabled
+
+• Steps:
+User navigates to the "Set Goal" section in the app
+System prompts the user to select a goal type (e.g., weight loss, muscle gain, endurance improvement)
+User enters specific goal details (e.g., "Lose 10 lbs in 8 weeks" or "Increase bench press by 20 lbs")
+User selects a target completion date and saves the goal
+System saves the goal and provides an initial recommendation (e.g., suggested calorie intake, weekly workout plan)
+User logs progress updates periodically
+System tracks progress and provides motivational feedback (e.g., "You're halfway there! Keep it up!")
+Upon goal completion, the system notifies the user and allows them to set a new goal
+
+• Postconditions:
+Goal is saved and displayed in the user’s dashboard
+Progress tracking updates based on logged data
+
+
+Use Case 7: Personalized Workout Recommendations
+• Actor: Any user (Bodybuilders, Weight Loss Users, Fitness Students)
+• Goal: Receive personalized workout recommendations based on progress
+• Preconditions:
+User must be logged in
+System must have access to the user’s workout history
+
+• Steps:
+User logs into the app and navigates to the "Recommendations" section
+System analyzes previous workouts, fitness goals, and progress
+Suggests an optimized workout plan (e.g., "Increase squat weight by 5 lbs," or "Add more cardio for fat loss")
+User accepts or modifies the recommendation
+System updates the user’s workout plan accordingly
+
+• Postconditions:
+User receives customized workout adjustments
+System updates recommendations dynamically
