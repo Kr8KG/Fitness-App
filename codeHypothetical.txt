@@ -1,0 +1,25 @@
+Hypothetical dummy database made in Access:
+
+CREATE TABLE users (
+    user_id PRIMARY KEY,
+    username TEXT(50) NOT NULL,
+    age INT,
+    weight DECIMAL(5,2),
+    height DECIMAL(5,2)
+);
+
+CREATE TABLE activities (
+    activity_id PRIMARY KEY,
+    activity_name TEXT(30) UNIQUE NOT NULL,
+    activity_calories DECIMAL(5,2) NOT NULL
+);
+
+CREATE TABLE calories_log (
+    log_id PRIMARY KEY,
+    user_id INT REFERENCES users(user_id),
+    activity_id INT REFERENCES activities(activity_id) NOT NULL,
+    total_calories DECIMAL(6,2) NOT NULL,
+    log_date DATE NOT NULL,
+    duration_minutes INT NOT NULL,
+    
+);
