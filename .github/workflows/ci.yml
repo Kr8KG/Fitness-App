@@ -15,8 +15,13 @@ jobs:
         with:
           node-version: 16  # Adjust to match your project
 
+      - name: List Files
+        run: ls -la
+
       - name: Install Dependencies
         run: npm install
 
+      - name: Run Tests
+        run: npm test
       - name: Run Tests
         run: npm test
